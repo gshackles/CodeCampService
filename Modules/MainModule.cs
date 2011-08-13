@@ -4,9 +4,11 @@ namespace CodeCampService.Modules
 {
     public class MainModule : NancyModule
     {
-        public MainModule()
+        public MainModule(CampProvider campProvider)
         {
-            Get["/"] = parameters => "o hai";
+            Get["/"] = _ => "o hai";
+            Get["/v1/{CampKey}/Version"] = parameters => campProvider.GetVersionNumber(parameters.CampKey).ToString();
+            Get["/v1/{CampKey}/Xml"] = parameters => campProvider.GetXml(parameters.CampKey);
         }
     }
 }
