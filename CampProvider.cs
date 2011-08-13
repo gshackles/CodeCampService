@@ -6,22 +6,16 @@ namespace CodeCampService
 {
     public class CampProvider
     {
-        private FileSystemWatcher _watcher;
         private Dictionary<string, CampCacheItem> _cache;
 
         public CampProvider(string folderPath)
         {
             _cache = new Dictionary<string, CampCacheItem>();
-            _watcher = new FileSystemWatcher(folderPath);
 
-            _watcher.Filter = "*.xml";
-            _watcher.Created += onFileCreatedOrChanged;
-            _watcher.Changed += onFileCreatedOrChanged;
-            _watcher.Deleted += onFileDeleted;
-
-            _watcher.EnableRaisingEvents = true;
-
-            initCache();
+            foreach (var file in Directory.GetFiles(folderPath, "*.xml"))
+            {
+                updateCache(file);
+            }
         }
 
         public int GetVersionNumber(string campKey)
@@ -32,24 +26,6 @@ namespace CodeCampService
         public string GetXml(string campKey)
         {
             return _cache[campKey.ToLower()].Xml;
-        }
-
-        private void initCache()
-        {
-            foreach (var file in Directory.GetFiles(_watcher.Path, "*.xml"))
-            {
-                updateCache(file);
-            }
-        }
-
-        private void onFileDeleted(object sender, FileSystemEventArgs e)
-        {
-            _cache.Remove(e.Name);
-        }
-
-        private void onFileCreatedOrChanged(object sender, FileSystemEventArgs e)
-        {
-            updateCache(e.FullPath);
         }
 
         private void updateCache(string filePath)
@@ -69,7 +45,6 @@ namespace CodeCampService
             catch
             {
             }
-            
         }
 
         private string getFileNameWithoutExtension(FileInfo file)
