@@ -10,7 +10,7 @@
 			<EndDate>2011-08-23T15:15:00</EndDate>
 			<Tags>
 				<Tag>Tag 1</Tag>
-				<Tag>Tag 2</Tag>
+				<Tag>Tag 4</Tag>
 			</Tags>
 		</Session>
 		<Session>
@@ -42,4 +42,18 @@
 			<Bio>Greg2 is awesome</Bio>
 		</Speaker>
 	</Speakers>
+	<Sponsors>
+		<Sponsor>
+			<Name>Sponsor 1</Name>
+			<Website>http://sponsor1.com</Website>
+		</Sponsor>
+		<Sponsor>
+			<Name>Sponsor 2</Name>
+			<Website>http://sponsor2.com</Website>
+		</Sponsor>
+		<Sponsor>
+			<Name>Sponsor 3</Name>
+			<Website>http://sponsor3.com</Website>
+		</Sponsor>
+	</Sponsors>
 </CodeCamp>
