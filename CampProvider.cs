@@ -45,8 +45,8 @@ namespace CodeCampService
 		
 		public void ResetCache(string campKey)
 		{
-			if (!_cache.ContainsKey(campKey))
-				return;
+			if (_cache.ContainsKey(campKey))
+				_cache.Remove(campKey);
 			
 			_cache[campKey] = getCamp(campKey);
 		}
