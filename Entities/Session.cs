@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace CodeCampService
 {
@@ -11,6 +12,8 @@ namespace CodeCampService
 		public string Speaker { get; set; }
 		public DateTime StartDate { get; set; }
 		public DateTime EndDate { get; set; }
+		
+		[XmlArrayItem("Tag")]
 		public List<string> Tags { get; set; }
 	}
 }
