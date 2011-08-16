@@ -1,4 +1,5 @@
-﻿using Nancy;
+using Nancy;
+using System.Configuration;
 
 namespace CodeCampService
 {
@@ -7,8 +8,9 @@ namespace CodeCampService
         protected override void ConfigureApplicationContainer(TinyIoC.TinyIoCContainer container)
         {
             base.ConfigureApplicationContainer(container);
-
-            container.Register<CampProvider>(new CampProvider(System.Web.HttpContext.Current.Server.MapPath("~/CampData")));
+			
+			string mongoConnectionString = ConfigurationManager.AppSettings.Get("MONGOHQ_URL");
+            container.Register<CampProvider>(new CampProvider(mongoConnectionString));
         }
     }
 }
