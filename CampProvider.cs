@@ -11,16 +11,13 @@ namespace CodeCampService
     {
         private Dictionary<string, CampCacheItem> _cache;
 		private MongoDatabase _database;
-		private const string _databaseName = "CodeCamps";
 		private const string _collectionName = "Camps";
 
         public CampProvider(string connectionString)
         {
             _cache = new Dictionary<string, CampCacheItem>();
 			
-			_database = MongoServer
-							.Create(connectionString)
-							.GetDatabase(_databaseName);
+			_database = MongoDatabase.Create(connectionString);
         }
 		
 		private CampCacheItem getCamp(string campKey)
