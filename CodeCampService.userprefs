@@ -1,16 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CampData/sample.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Web.config">
     <Files>
-      <File FileName="CampData/sample.xml" Line="28" Column="13" />
+      <File FileName="CampProvider.cs" Line="36" Column="7" />
+      <File FileName="Modules/MainModule.cs" Line="14" Column="25" />
+      <File FileName="Web.config" Line="17" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="CodeCampService" expanded="True">
-            <Node name="CampData" expanded="True">
-              <Node name="sample.xml" selected="True" />
-            </Node>
+            <Node name="Entities" expanded="True" />
+            <Node name="Modules" expanded="True" />
+            <Node name="Web.config" selected="True" />
           </Node>
         </State>
       </Pad>

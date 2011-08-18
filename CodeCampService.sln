@@ -14,6 +14,9 @@ Global
 		{2D666B7B-48D6-4F7E-B613-4D494961579A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D666B7B-48D6-4F7E-B613-4D494961579A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = CodeCampService.csproj
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
