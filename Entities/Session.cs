@@ -10,6 +10,7 @@ namespace CodeCampService
 		public string Title { get; set; }
 		public string Abstract { get; set; }
 		public string Speaker { get; set; }
+		public string Room { get; set; }
 		public DateTime StartDate { get; set; }
 		public DateTime EndDate { get; set; }
 		
