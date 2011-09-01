@@ -1,13 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Web.config">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Entities/Sponsor.cs">
     <Files>
       <File FileName="CampProvider.cs" Line="36" Column="7" />
       <File FileName="Modules/MainModule.cs" Line="1" Column="1" />
-      <File FileName="Entities/Sponsor.cs" Line="1" Column="1" />
+      <File FileName="Entities/Sponsor.cs" Line="10" Column="35" />
       <File FileName="Entities/Speaker.cs" Line="1" Column="1" />
       <File FileName="Entities/Session.cs" Line="1" Column="1" />
-      <File FileName="Web.config" Line="4" Column="146" />
+      <File FileName="Web.config" Line="1" Column="1" />
+      <File FileName="Entities/Camp.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,9 +16,10 @@
           <Option id="ShowVersionControlOverlays" value="True" />
           <Option id="ShowAllFiles" value="False" />
           <Node name="CodeCampService" expanded="True">
-            <Node name="Entities" expanded="True" />
+            <Node name="Entities" expanded="True">
+              <Node name="Sponsor.cs" selected="True" />
+            </Node>
             <Node name="Modules" expanded="True" />
-            <Node name="Web.config" selected="True" />
           </Node>
         </State>
       </Pad>

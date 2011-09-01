@@ -73,6 +73,7 @@
     <Compile Include="Entities\Speaker.cs" />
     <Compile Include="Entities\Sponsor.cs" />
     <Compile Include="CampProvider.cs" />
+    <Compile Include="Entities\Room.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

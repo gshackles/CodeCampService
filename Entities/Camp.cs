@@ -23,6 +23,9 @@ namespace CodeCampService
 		
 		[XmlArrayItem("Tier")]
 		public List<string> SponsorTiers { get; set; }
+		
+		[XmlArrayItem("Room")]
+		public List<Room> Rooms { get; set; }
 	}
 }
 
