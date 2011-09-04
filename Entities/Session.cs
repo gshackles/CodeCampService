@@ -13,6 +13,7 @@ namespace CodeCampService
 		public string Room { get; set; }
 		public DateTime StartDate { get; set; }
 		public DateTime EndDate { get; set; }
+		public string RoomKey { get; set; }
 		
 		[XmlArrayItem("Tag")]
 		public List<string> Tags { get; set; }
